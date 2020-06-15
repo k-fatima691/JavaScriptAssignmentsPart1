@@ -39,7 +39,7 @@ var book = "A smarter way to learn JavaScript";
 var message = "I am trying to learn from the Book ";
 alert(message + book);
 //question 8
-//done in index.html
+document.write("Yah!I can write HTML content through JavaScript")
 //question 9
 alert("▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬")
 
@@ -248,6 +248,8 @@ document.write("--a - --b + ++b + b--;3" + "<br>")
 //question 3
 var name = prompt("Name:","Enter your name");
 alert("Hello,"+ name + "!")
+//question 4
+//question is not written
 //question 5
 var num = +prompt("Number:","Enter number");
 if (!num) {
@@ -469,19 +471,7 @@ else if(operator === "%"){
 //chapter 12-13
 //IF ELSE & ELSE IF STATEMENT,TESTING SET OF CONDITIONS
 //question 1
-var askUser = prompt("Number or String:","Enter number or string");
-if(askUser === "A"){
-    alert("A = 65 & and this is uppercase")
-}
-else if(askUser === "a"){
-    alert("a = 97 & and this is lowercase")
-}
-else if(askUser === "Z"){
-    alert("Z = 90 & and this is uppercase")
-}
-else if(askUser === "z"){
-    alert("z = 122 & and this is lowercase")
-}
+//not able to attempt it
 //question 2
 var num1 = +prompt("Number:","Enter first number");
 var num2 = +prompt("Number:","Enter second number");
@@ -567,27 +557,194 @@ console.log(boolean)
 var mixarray = ["Maria",4007,false]
 console.log(mixarray)
 //question 7
-var education = ["SSC","HSC","BCS","BS","B.COM","MS","M.Phil.","PhD"]
-document.write("<b>Qualification<b><br>")
-document.write("1)"+education[0]+"<br>")
-document.write("2)"+education[1]+"<br>")
-document.write("3)"+education[2]+"<br>")
-document.write("4)"+education[3]+"<br>")
-document.write("5)"+education[4]+"<br>")
-document.write("6)"+education[5]+"<br>")
-document.write("7)"+education[6]+"<br>")
-document.write("8)"+education[7]+"<br>")
+var qualifications = ["SSC","HSC","BCS","BS","BCOM","MS","M.Phil.","PhD"]
+document.write("<b>Qualifications:<b><br>")
+document.write("1)"+qualifications[0]+"<br>")
+document.write("2)"+qualifications[1]+"<br>")
+document.write("3)"+qualifications[2]+"<br>")
+document.write("4)"+qualifications[3]+"<br>")
+document.write("5)"+qualifications[4]+"<br>")
+document.write("6)"+qualifications[5]+"<br>")
+document.write("7)"+qualifications[6]+"<br>")
+document.write("8)"+qualifications[7]+"<br>")
 
 
 //question 8
-var student = ["Fahad","Mahrukh","Salman"]
-
-for (i = 0;i<student.length;i++){
-    var studentMarks = [354,440,230]
+var studentNames = ["Fahad","Mahrukh","Salman"]
+for (i = 0;i<studentNames.length;i++){
+    var studentMarks = [320,230,480]
     for (var j=0;j<studentMarks.length;j++){
         var percentage = studentMarks[i] *100 / 500
         }
-        document.write("Score of "+student[i]+"is"+ studentMarks[i]+"."+"Percentage is"+percentage+"%"+"<br>")
+        document.write("Score of "+studentNames[i]+" is "+ studentMarks[i]+"."+"Percentage: " + percentage + "%"+"<br>")
     
     }
 //question 9
+var colornames = ["Orange","Green","Yellow","Blue","Pink"];
+document.write(colornames + "<br>");
+//a
+var colorBeginning = prompt("What color you want to add to the beginning?","Enter color here")
+colornames.unshift(colorBeginning)
+document.write(colornames + "<br>");
+//b
+var colorEnd = prompt("What color you want to add to the end?","Enter color here")
+colornames.push(colorEnd)
+document.write(colornames + "<br>");
+//c
+colornames.unshift("Brown","Purple")
+document.write(colornames + "<br>")
+//d
+colornames.shift()
+document.write(colornames + "<br>")
+//e
+colornames.pop()
+document.write(colornames + "<br>")
+//f
+//not able to attempt
+//g
+//not able to attempt
+
+//question 10
+var studentScores = [320,230,480,120]
+document.write("Scores of Students:" + studentScores + "<br>")
+var ascendingOrder = studentScores.sort()
+document.write("Ordered Scores of Students:" + ascendingOrder + "<br>")
+//question 11
+var cityNames = ["Karachi","Lahore","Islamabad","Quetta","Peshawar"]
+var selectedCities = cityNames.slice(2,4)
+document.write("Cities List:" + "<br>" + cityNames +"<br>")
+document.write("Selected Cities List:"+ "<br>" + selectedCities)
+//question 12
+var arr = ["This","is","my","cat"];
+string = arr.join(" ")
+document.write("Array:"+"<br>"+arr+"<br>")
+document.write("String:"+"<br>"+string)
+
+
+//question 13
+var devices = []
+devices.push("Keyboard")
+devices.push("Mouse")
+devices.push("Printer")
+devices.push("Monitor")
+
+
+
+//question 14
+var devices = []
+devices.unshift("Monitor")
+devices.unshift("Printer")
+devices.unshift("Mouse")
+devices.unshift("Keyboard")
+
+
+//question 15 
+var mobManufactureres = ["Apple","Samsung","Motorola","Nokia","Sony","Haier"]
+document.write("<select><option>" + mobManufactureres[0] + "</option><option>" + mobManufactureres[1]+"</option><option>"+mobManufactureres[2]
++"</option><option>"+mobManufactureres[3]+"</option><option>"+mobManufactureres[4]+"</option><option>"+mobManufactureres[5]+"</option> </select> ")
+
+
+//chapter 17-20
+//Arrays and Loops
+//question 1
+var multiArray = [
+    [],
+    [],
+    []
+]
+//question 2
+var multiArray = [
+    [0,1,2,3],
+    [1,0,1,2],
+    [2,1,0,1]
+]
+//question 3
+for (var i=1;i<=10;i++){
+    document.write(i + "<br>")
+}
+//question 4
+var tablenum = +prompt("Enter a number to show its multiplication table")
+var tablelength = +prompt("Enter length of multiplication table")
+document.write("Multiplication table of " + tablenum + "<br>")
+document.write("Length " + tablelength + "<br>" + "<br>")
+for(var i = 1;i<=tablelength;i++){
+    document.write(tablenum + "x" + i + "=" + tablenum*i +"<br>")
+}
+//question 5
+var fruits = ["apple","banana","mango","orange","strawberry"]
+for (var i=0;i<fruits.length;i++){
+    document.write(fruits[i] + "<br>")
+}
+for (var i = 0;i<fruits.length;i++){
+    document.write("Element at index " + i + " is " +fruits[i] + "<br>")
+}
+//question 6
+//a
+
+document.write(" <h2>Counting: </h2>")
+for (var i = 1; i <= 15; i++) {
+    document.write(i + ",")
+
+}
+
+
+//b
+
+document.write(" <h2>Reverse Counting: </h2> ")
+for (var i = 10; i >= 1; i--) {
+    document.write(i + ",")
+}
+
+
+//c
+document.write(" <h2> Even: </h2>")
+for (var i = 0; i <= 20; i = i + 2) {
+    document.write(i + ",")
+}
+
+
+//d
+
+document.write(" <h2> Odd: </h2>")
+for (var i = 1; i <= 20; i = i + 2) {
+    document.write(i +",")
+}
+
+
+//e
+
+document.write("<h2> Series: </h2>")
+for (var i = 2; i <= 20; i = i + 2) {
+    document.write(i + "K,")
+}
+
+
+//question 7
+var bakeryItems = ["cake", "apple pie", "cookie", "chips", "patties"]
+var askUser = prompt("Welcome to ABC Bakery.What do you want to order sir/ma'am?")
+var isFound = false
+for (i = 0; i < bakeryItems.length; i++) {
+    if (askUser === bakeryItems[i]) {
+        alert(askUser + " is available at index " + i + " in our bakery")
+        isFound = true
+        break
+    }
+}
+if (isFound === false) {
+    alert("We are sorry. " + askUser + " is not available in our bakery")
+}
+//question 8
+var A = [24,53,78,91,12]
+document.write("Array items: " + A + "<br>")
+A = A.sort()
+document.write("The largest number is " + A[A.length - 1])
+//question 9
+var A = [24,53,78,91,12]
+document.write("Array items: " + A + "<br>" )
+A = A.sort().reverse()
+document.write("The smallest number is " + A[A.length - 1])
+//question 10
+for (var i = 5;i <= 100;i = i + 5){
+    document.write(i + ",")
+}
+
